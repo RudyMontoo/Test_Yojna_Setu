@@ -247,3 +247,43 @@ This project is built for social good. All government scheme data is sourced fro
 
 > *"Jan Jan ko Yojana se Jodo"* — Connect every citizen to their entitlements 🇮🇳
 # Test_Yojna_Setu
+
+---
+
+
+For contributors or developers who want to quickly run the AI service locally:
+
+### 1. Clone the repository
+
+```
+git clone https://github.com/samarthtyagi350-gif/Test_Yojna_Setu.git
+cd Test_Yojna_Setu/ai_service
+```
+
+### 2. Install dependencies
+
+```
+pip install -r requirements.txt
+```
+
+### 3. Setup environment variables
+
+Create a `.env` file and add:
+
+```
+GEMINI_API_KEY=your_api_key
+```
+
+### 4. Run the server
+
+```
+uvicorn ai_service.main:app --reload --port 8000
+```
+
+### 5. Open API docs
+
+```
+http://localhost:8000/docs
+```
+
+> This section is added to simplify local setup for new contributors.
